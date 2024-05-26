@@ -1,0 +1,56 @@
+body {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    font-family: 'Press Start 2P', cursive; /* Gaming style font */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+}
+
+.content {
+    background: #333;
+    padding: 200px;
+    border: 4px solid #00ff00;
+    display: inline-block;
+    border-radius: 0; /* No rounded edges for pixel art style */
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0.5em 0;
+}
+
+p {
+    font-size: 1.2em;
+    margin: 0.5em 0;
+}
+
+img {
+    width: 500px; /* Adjust the width to make the image bigger */
+    height: auto;
+    image-rendering: pixelated; /* Ensure pixelated image rendering */
+    margin: 20px 0;
+}
+
+.countdown {
+    font-size: 1.5em;
+    margin-top: 20px;
+    font-family: 'Press Start 2P', cursive; /* Apply pixel art font */
+}
+
+/* Adding some retro animation */
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+#countdown-timer {
+    animation: blink 1s step-start infinite;
+}
